@@ -16,6 +16,7 @@
   .chat {
     display: flex;
     height: 91%;
+    width: 110%;
   }
   
   .friends-list {
