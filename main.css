@@ -34,6 +34,8 @@
   }
   
   .message-thread {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     overflow-y: scroll;
     flex: 1;
@@ -46,12 +48,13 @@
     border-radius: 10px;
     margin-bottom: 10px;
     display: inline-block;
+    align-self: flex-start;
   }
   
   .sent {
     background-color: #f2f2f2;
     color: #333;
-    float: right;
+    align-self: flex-end;
   }
   
   form {
