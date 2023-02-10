@@ -4,48 +4,60 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        <div class="messenger-container">
-            <div class="header">
-              <h3>Facebook Messenger</h3>
-            </div>
-          
-            <div class="thread-list">
-              <ul>
-                <li>Friend 1</li>
-                <li>Friend 2</li>
-                <li>Friend 3</li>
-              </ul>
-            </div>
-          
-            <div class="message-container">
-              <div class="message-thread">
-                <div class="message-bubble">
-                  <p>Hello!</p>
-                </div>
-          
-                <div class="message-bubble sent">
-                  <p>Hi! How are you doing?</p>
-                </div>
-              </div>
-          
-              <form>
-                <input type="text" placeholder="Type a message...">
-                <button type="submit">Send</button>
-              </form>
-            </div>
-          </div>
-          
-        
-        <script src="send.js" async defer></script>
-    </body>
-</html>
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="messenger-container">
+        <div class="header">
+            <h3>Facebook Messenger</h3>
+        </div>
+
+        <div class="chat">
+            <div class="friends-list">
+                <div class="friend selected" data-friend-id="1">
+                    <img src="friend1-icon.jpg" class="friend-icon">
+                    <span class="friend-name">Friend 1</span>
+                </div>
+                <div class="friend" data-friend-id="2">
+                    <img src="friend2-icon.jpg" class="friend-icon">
+                    <span class="friend-name">Friend 2</span>
+                </div>
+                <div class="friend" data-friend-id="3">
+                    <img src="friend3-icon.jpg" class="friend-icon">
+                    <span class="friend-name">Friend 3</span>
+                </div>
+            </div>
+    
+            <div class="message-container">
+                <div class="message-thread">
+                    <div class="message-bubble">
+                        <p>Hello!</p>
+                    </div>
+    
+                    <div class="message-bubble sent">
+                        <p>Hi! How are you doing?</p>
+                    </div>
+                </div>
+    
+                <form>
+                    <input type="text" placeholder="Type a message...">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="send.js" async defer></script>
+</body>
+
+</html>
